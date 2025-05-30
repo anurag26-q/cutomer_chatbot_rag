@@ -1,0 +1,20 @@
+vector_store:
+  type: "faiss"  # was "astra_db"
+
+faiss:
+  index_path: "custmor_support_system\faiss_index"  # where your FAISS index is saved locally
+
+embedding_model:
+  provider: "google"
+  model_name: "models/text-embedding-004"
+
+retriever:
+  top_k: 10
+
+llm:
+  provider: "google"
+<<<<<<< HEAD
+  model_name: "models/gemini-1.5-flash-8b"  
+=======
+  model_name: "deepseek-r1-distill-llama-70b" 
+>>>>>>> abbeb2162f426d076cab55ae14e9e07907bb42b8

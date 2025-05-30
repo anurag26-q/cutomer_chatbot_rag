@@ -1,0 +1,101 @@
+<<<<<<< HEAD
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.env/
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.tox/
+dist/
+build/
+*.so
+*.pyd
+
+# Data
+# Raw data (often too large or sensitive)
+data/raw/
+# Processed data (can be large, often derived from raw)
+data/processed/
+# Intermediate data
+data/interim/
+# Output data (e.g., final CSVs, plots)
+data/output/
+# DVC cache directory (if using DVC)
+.dvc/cache/
+# DVC lock file (if you want to ignore it, though usually tracked)
+# dvc.lock
+
+# Models and Checkpoints
+# Saved models (e.g., .pkl, .h5, .pth, .bin, .joblib)
+models/
+checkpoints/
+*.pkl
+*.h5
+*.pth
+*.bin
+*.joblib
+*.onnx
+*.pt
+*.tf
+*.tflite
+*.pb
+
+# Logs
+logs/
+*.log
+*.txt # Be careful if your text files are actual data/code
+
+# Jupyter Notebooks
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# Jupyter Notebook history
+.ipython/
+# Jupyter Notebook output files
+*.ipynb_checkpoints
+*.html # If notebooks are exported to HTML and you don't want to track
+*.pdf # If notebooks are exported to PDF and you don't want to track
+
+# Environment Variables / Credentials
+.env # Crucial: do NOT commit your .env file with API keys!
+.env.* # Any other environment files
+*.env
+
+# IDE and Editor Specific Files
+.idea/             # IntelliJ IDEA / PyCharm project files
+.vscode/           # VS Code settings (can be tracked if shared, but often ignored)
+*.sublime-project
+*.sublime-workspace
+.DS_Store          # macOS specific files
+Thumbs.db          # Windows specific files
+*.swp              # Vim swap files
+*~                 # Backup files from editors
+.history/          # VS Code Local History
+
+# Testing and Coverage
+.coverage
+.coverage.*
+
+# Miscellaneous
+*.zip
+*.tar.gz
+*.rar
+*.7z
+=======
+env
+venv
+.env
+e_commerce_bot.egg-info
+archive
+data_archive
+>>>>>>> abbeb2162f426d076cab55ae14e9e07907bb42b8
