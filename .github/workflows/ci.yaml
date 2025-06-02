@@ -46,7 +46,7 @@ jobs:
           subject: Build succeeded!
           to: anuragparashar111@gmail.com
           from: onlymeand2468@gmail.com
-          body: | 
+          body: |
             The build succeeded! 🚀
 
 
