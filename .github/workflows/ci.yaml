@@ -36,18 +36,18 @@ jobs:
           tags: anuragaps/chatbot:latest
 
 
-      - name: Send email notification
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.SMTP_USERNAME }}
-          password: ${{ secrets.SMTP_PASSWORD }}
-          subject: Build succeeded!
-          to: anuragparashar111@gmail.com
-          from: onlymeand2468@gmail.com
-          body: |
-            The build succeeded! 🚀
+      # - name: Send email notification
+      #   uses: dawidd6/action-send-mail@v3
+      #   with:
+      #     server_address: smtp.gmail.com
+      #     server_port: 465
+      #     username: ${{ secrets.SMTP_USERNAME }}
+      #     password: ${{ secrets.SMTP_PASSWORD }}
+      #     subject: Build succeeded!
+      #     to: anuragparashar111@gmail.com
+      #     from: onlymeand2468@gmail.com
+      #     body: |
+      #       The build succeeded! 🚀
 
 
 
