@@ -34,6 +34,11 @@ jobs:
           file: ./Dockerfile
           push: True  # Set to true if pushing to registry
           tags: anuragaps/chatbot:latest
+      - name: Notify Slack
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: '{"text":"New build deployed successfully!"}'
+
 
       # Optional: Test Docker image (can run unit tests inside container)
 
