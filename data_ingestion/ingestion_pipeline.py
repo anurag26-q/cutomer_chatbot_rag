@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from typing import List
 from dotenv import load_dotenv
 from utils.model_loader import ModelLoader
-from config.config_loader import load_config
+from utils.config_loader import load_config
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter

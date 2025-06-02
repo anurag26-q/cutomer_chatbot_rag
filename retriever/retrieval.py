@@ -1,16 +1,11 @@
 import os
 import sys
 from typing import List
-<<<<<<< HEAD
-=======
-from langchain_core.documents import Document
-from utils.config_loader import load_config
-from utils.model_loader import ModelLoader
->>>>>>> abbeb2162f426d076cab55ae14e9e07907bb42b8
+
 from dotenv import load_dotenv
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.model_loader import ModelLoader
-from config.config_loader import load_config
+from utils.config_loader import load_config
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
 
@@ -82,7 +77,7 @@ def detect_category_from_query(query: str) -> str:
         return "headphones"
     elif "mobile" in query or "smartphone" in query or "phone" in query:
         return "mobiles"
-    elif "watch" in query:
+    elif "watch" in query or 'smartwatch' in query:
         return "smart_watches"
     elif "tv" in query or "television" in query:
         return "tv"
