@@ -34,18 +34,21 @@ jobs:
           file: ./Dockerfile
           push: True  # Set to true if pushing to registry
           tags: anuragaps/chatbot:latest
+
+
       - name: Send email notification
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.example.com
+          server_address: smtp.gmail.com
           server_port: 465
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: Build succeeded!
-          to: user@example.com
-          from: ci@example.com
+          to: anuragparashar111@gmail.com
+          from: onlymeand2468@gmail.com
           body: |
             The build succeeded! 🚀
+
 
 
 
