@@ -34,10 +34,19 @@ jobs:
           file: ./Dockerfile
           push: True  # Set to true if pushing to registry
           tags: anuragaps/chatbot:latest
-      - name: Notify Slack
-        uses: slackapi/slack-github-action@v1.23.0
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
         with:
-          payload: '{"text":"New build deployed successfully!"}'
+          server_address: smtp.example.com
+          server_port: 465
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: Build succeeded!
+          to: user@example.com
+          from: ci@example.com
+          body: |
+            The build succeeded! 🚀
+
 
 
       # Optional: Test Docker image (can run unit tests inside container)
