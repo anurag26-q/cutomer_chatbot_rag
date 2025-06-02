@@ -48,7 +48,17 @@ jobs:
           from: onlymeand2468@gmail.com
           body: |
             The build succeeded! 🚀
+      
 
+      - name: Send Telegram notification
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            🚀 The build for *${{ github.repository }}* has succeeded!
+            🏷️ Docker Image: `anuragaps/chatbot:latest`
+            🔗 [View commit](${{ github.event.head_commit.url }})
 
 
 
