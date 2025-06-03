@@ -44,8 +44,8 @@ jobs:
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: Build succeeded!
-          to: anuragparashar111@gmail.com
-          from: onlymeand2468@gmail.com
+          to: onlymeand2468@gmail.com
+          from: anuragparashar111@gmail.com
           body: |
             The build succeeded! 🚀 
       
